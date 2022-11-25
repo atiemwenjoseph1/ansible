@@ -1,0 +1,24 @@
+all:   # This is for configuring all the servers  
+    hosts:  # This is for configuring a single host [line 3]
+        web.mydomain.local:
+    children:
+        customer1:
+            children: # This is for configuring ['db' and 'web'] if there was only 1 customer
+                db:  # Assuming this is the Database
+                    hosts: 
+                        db1.mydomain.local:
+                        db2.mydomain.local:
+                web: # Assuming this is the website
+                    hosts:
+                        web1.mydomain.local:
+                        web2.mydomain.local:
+        customer2:
+            children: 
+                db:  # Assuming this is the Database
+                    hosts: 
+                        db1.mydomain.local:
+                        db2.mydomain.local:
+                web: # Assuming this is the website
+                    hosts:
+                        web1.mydomain.local:
+                        web2.mydomain.local:

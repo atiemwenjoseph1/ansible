@@ -1,0 +1,27 @@
+items:
+
+Fruit:
+    Green:
+        Grape
+        Watermelon
+    Red:
+        Strawberry
+    Yellow:
+        Banana
+    Orange:
+        Orange
+    total: 4
+ 
+ Veg:
+  Green:
+        Broccoli
+        Cabbage
+        Lettuce
+    Red:
+        Tomato
+        Peppers
+    Yellow:
+        Banana
+    Orange:
+        Carrot
+     total: 7
